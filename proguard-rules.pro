@@ -1,0 +1,4 @@
+-dontwarn com.fasterxml.jackson.databind.ext.**
+-dontwarn io.jsonwebtoken.impl.**
+-dontwarn java.beans.**
+-dontwarn javax.xml.bind.**

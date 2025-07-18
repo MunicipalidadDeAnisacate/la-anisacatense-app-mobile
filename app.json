@@ -1,0 +1,101 @@
+{
+  "expo": {
+    "name": "La Anisacatense",
+    "slug": "LaAnisacatense",
+    "version": "1.0.37",
+    "orientation": "portrait",
+    "scheme": "solicitudes-anisacate",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "jsEngine": "hermes",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/fondoAzulSplash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E73BE"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "buildNumber": "1.0.37",
+      "icon": "./assets/images/anisacatense/logoApp.png",
+      "bundleIdentifier": "com.laanisacatense.app",
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "es",
+        "CFBundleLocalizations": [
+          "es",
+          "en"
+        ],
+        "NSLocationWhenInUseUsageDescription": "Usamos tu ubicación al abrir el mapa para mostrar postes de alumbrado cercanos y permitirte enviar solicitudes geolocalizadas.",
+        "NSLocationWhenInUseUsageDescription~en": "We use your location when opening the map to show nearby streetlights and let you submit geolocated reports.",
+        "NSCameraUsageDescription": "Usamos la cámara para que puedas tomar fotos de los postes con problemas al crear tu solicitud.",
+        "NSCameraUsageDescription~en": "We access your camera so you can take photos of streetlights needing repair when creating a report.",
+        "NSPhotoLibraryUsageDescription": "Usamos tu galería para que puedas adjuntar imágenes a tus solicitudes.",
+        "NSPhotoLibraryUsageDescription~en": "We access your photo library so you can attach images to your reports.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.laanisacatense.app",
+      "versionCode": 37,
+      "versionName": "1.0.37",
+      "icon": "./assets/images/anisacatense/logoApp.png",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "softwareKeyboardLayoutMode": "resize",
+      "statusBar": {
+        "translucent": true,
+        "backgroundColor": "#00000000"
+      },
+      "navigationBar": {
+        "backgroundColor": "#00000000",
+        "visible": "leanback"
+      }
+    },
+    "assetBundlePatterns": [
+      "assets/pdfs/*"
+    ],
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/RockSalt-Regular.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "enableProguardInReleaseBuilds": true,
+            "proguardRules": "./proguard-rules.pro"
+          }
+        }
+      ],
+      "expo-secure-store",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "408a1120-4382-4fff-8c8e-516297376ec2"
+      }
+    }
+  }
+}
